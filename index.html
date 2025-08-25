@@ -103,7 +103,15 @@
         .faq { max-width: 800px; margin: auto; }
         .faq-item { background: var(--white-color); margin-bottom: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .faq-question { padding: 1rem 1.5rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-answer { padding: 0 1.5rem; display: none; overflow: hidden; max-height: 0; transition: all 0.4s ease-out; }
+        
+        /* CÓDIGO CORRIGIDO ABAIXO */
+        .faq-answer { 
+            padding: 0 1.5rem; 
+            overflow: hidden; 
+            max-height: 0; 
+            transition: all 0.4s ease-out; 
+        }
+
         .faq-item.active .faq-answer { max-height: 200px; padding: 1.5rem; }
         .faq-question::after { content: '+'; font-size: 1.5rem; color: var(--primary-color); transition: transform 0.3s ease; }
         .faq-item.active .faq-question::after { content: '-'; transform: rotate(180deg); }
@@ -283,10 +291,36 @@
     <section class="faq section">
         <div class="container animate-on-scroll">
             <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="faq-item"><div class="faq-question">Preciso entender de programação para instalar?</div><div class="faq-answer"><p>Não! Nosso guia em vídeo (Bônus 1) mostra o passo a passo de forma simples e direta. Se você sabe seguir instruções, consegue instalar. E caso tenha qualquer dificuldade, nosso suporte premium (Bônus 2) está aqui para ajudar.</p></div></div>
-            <div class="faq-item"><div class="faq-question">Quais são os custos para manter o bot funcionando?</div><div class="faq-answer"><p>Os custos são muito baixos. Você precisará de um servidor para hospedar o script (existem opções a partir de $5 dólares por mês) e uma chave da API da OpenAI, que tem um custo por uso, mas para o volume de uma farmácia, geralmente fica em poucos dólares por mês. É um investimento ínfimo perto do retorno em vendas e tempo economizado.</p></div></div>
-            <div class="faq-item"><div class="faq-question">Funciona com meu número de WhatsApp pessoal ou precisa ser Business?</div><div class="faq-answer"><p>O sistema funciona utilizando uma tecnologia que automatiza o WhatsApp Web. É altamente recomendável usar um número dedicado e, de preferência, uma conta do WhatsApp Business para passar mais profissionalismo e ter acesso a recursos adicionais da plataforma.</p></div></div>
-            <div class="faq-item"><div class="faq-question">O pagamento é uma mensalidade?</div><div class="faq-answer"><p>Não! O pagamento é único. Você compra o script e ele é seu para sempre (acesso vitalício), incluindo todas as funcionalidades descritas. Sem taxas escondidas ou mensalidades.</p></div></div>
+            <div class="faq-item">
+                <div class="faq-question">Preciso entender de programação para instalar?</div>
+                <div class="faq-answer">
+                    <p>Não! Nosso guia em vídeo (Bônus 1) mostra o passo a passo de forma simples e direta. Se você sabe seguir instruções, consegue instalar. E caso tenha qualquer dificuldade, nosso suporte premium (Bônus 2) está aqui para ajudar.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quais são os custos para manter o bot funcionando?</div>
+                <div class="faq-answer">
+                    <p>Os custos são muito baixos. Você precisará de um servidor para hospedar o script (existem opções a partir de $5 dólares por mês) e uma chave da API da OpenAI, que tem um custo por uso, mas para o volume de uma farmácia, geralmente fica em poucos dólares por mês. É um investimento ínfimo perto do retorno em vendas e tempo economizado. Ou instalar em sua própria máquina sem custo algum.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Funciona com meu número de WhatsApp pessoal ou precisa ser Business?</div>
+                <div class="faq-answer">
+                    <p>O sistema funciona utilizando uma tecnologia que automatiza o WhatsApp Web. É altamente recomendável usar um número dedicado e, de preferência, uma conta do WhatsApp Business para passar mais profissionalismo e ter acesso a recursos adicionais da plataforma.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">O pagamento é uma mensalidade?</div>
+                <div class="faq-answer">
+                    <p>Não! O pagamento é único. Você compra o script e ele é seu para sempre (acesso vitalício), incluindo todas as funcionalidades descritas. Sem taxas escondidas ou mensalidades.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">O robô consegue entender variações de perguntas dos clientes?</div>
+                <div class="faq-answer">
+                    <p>Sim! Graças à integração com a tecnologia da OpenAI (a mesma do ChatGPT), o PharmaBot é treinado para entender o contexto e a intenção por trás das perguntas, mesmo que sejam feitas de formas diferentes. Ele não depende de palavras-chave exatas, o que torna a conversa muito mais natural e eficiente.</p>
+                </div>
+            </div>
         </div>
     </section>
 
