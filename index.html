@@ -22,18 +22,8 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-color);
-        }
-
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--light-color); }
         .container { max-width: 960px; margin: auto; overflow: hidden; padding: 0 20px; }
 
         header { background: var(--white-color); padding: 2rem 0; text-align: center; border-bottom: 5px solid var(--primary-color); }
@@ -42,13 +32,7 @@
         header h1 span { color: var(--primary-color); text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
         header p { font-size: 1.2rem; margin-top: 0.5rem; }
 
-        .urgency-bar { 
-            background-color: var(--urgency-color);
-            color: var(--white-color); 
-            text-align: center; 
-            padding: 0.8rem; 
-            font-weight: 600; 
-        }
+        .urgency-bar { background-color: var(--urgency-color); color: var(--white-color); text-align: center; padding: 0.8rem; font-weight: 600; }
         .timer { font-size: 1.8rem; letter-spacing: 2px; color: var(--cta-color); margin-left: 10px; }
 
         .video-section { padding: 3rem 0; background: var(--white-color); text-align: center; }
@@ -60,7 +44,6 @@
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         
         .sub-cta { font-size: 0.9rem; margin-top: 10px; opacity: 0.8; }
-
         .section { padding: 4rem 0; }
         .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; font-weight: 700; color: var(--dark-color); }
         
@@ -87,17 +70,7 @@
         .testimonials .section-title { color: var(--white-color); }
         .testimonial { background: rgba(255,255,255, 0.1); padding: 2rem; border-radius: 10px; margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease-out; }
         .testimonial:hover { background: rgba(255,255,255, 0.2); transform: scale(1.03); }
-        
-        .testimonial img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 4px solid var(--cta-color);
-            margin-bottom: 1rem;
-            object-fit: cover;
-            object-position: center;
-        }
-
+        .testimonial img { width: 100px; height: 100px; border-radius: 50%; border: 4px solid var(--cta-color); margin-bottom: 1rem; object-fit: cover; object-position: center; }
         .testimonial-text { font-style: italic; margin-bottom: 1rem; font-size: 1.1rem; }
         .testimonial-author { font-weight: 700; }
         .testimonial-author span { display: block; font-weight: 400; font-size: 0.9rem; opacity: 0.8; }
@@ -105,10 +78,14 @@
         .offer { background: var(--white-color); text-align: center; }
         .offer-box { border: 3px dashed var(--secondary-color); border-radius: 15px; padding: 3rem; background: var(--light-color); }
         .offer-box h2 { font-size: 2.2rem; font-weight: 700; color: var(--dark-color); }
+        .offer-box h3 { font-size: 1.4rem; margin-top: 2rem; }
         .offer-box p { font-size: 1.1rem; margin-top: 1rem; }
-        .bonus-list { list-style: none; margin: 2rem 0; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto; }
-        .bonus-list li { background: var(--white-color); padding: 1rem; margin-bottom: 1rem; border-radius: 5px; border-left: 5px solid var(--secondary-color); font-weight: 600; display: flex; align-items: center; }
-        .bonus-list li i { color: var(--secondary-color); margin-right: 15px; font-size: 1.5rem; }
+        
+        .bonus-list { list-style: none; margin: 2rem auto; text-align: left; max-width: 600px; }
+        .bonus-list li { background: var(--white-color); padding: 1.2rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; align-items: center; border-left: 5px solid var(--secondary-color); }
+        .bonus-list li i { color: var(--secondary-color); margin-right: 15px; font-size: 1.8rem; }
+        .bonus-list .bonus-text { font-size: 1.1rem; }
+
         .price-box { margin-top: 2rem; }
         .old-price { text-decoration: line-through; font-size: 1.5rem; color: #6c757d; }
         .new-price { font-size: 3.5rem; font-weight: 900; color: var(--primary-color); margin: 0.5rem 0; }
@@ -118,6 +95,11 @@
         .guarantee img { max-width: 150px; }
         .guarantee-text h3 { color: var(--dark-color); font-size: 1.5rem; }
         
+        .reclame-aqui-proof { display: flex; align-items: center; gap: 2rem; margin-top: 2rem; background-color: var(--light-color); padding: 1.5rem 2rem; border-radius: 10px; border: 1px solid #e0e0e0; }
+        .reclame-aqui-proof img { width: 120px; height: auto; flex-shrink: 0; }
+        .reclame-aqui-proof p { font-size: 1.1rem; font-weight: 600; line-height: 1.5; }
+        .reclame-aqui-proof p span { color: var(--secondary-color); font-weight: 700; }
+
         .faq { max-width: 800px; margin: auto; }
         .faq-item { background: var(--white-color); margin-bottom: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .faq-question { padding: 1rem 1.5rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
@@ -158,7 +140,7 @@
             header h1 { font-size: 2.2rem; }
             .section-title { font-size: 2rem; }
             .cta-button { font-size: 1.2rem; padding: 15px 30px; }
-            .guarantee { flex-direction: column; text-align: center; }
+            .guarantee, .reclame-aqui-proof { flex-direction: column; text-align: center; }
             .creator-grid { grid-template-columns: 1fr; text-align: center; }
             .creator-images { order: -1; }
             .stats-grid { grid-template-columns: 1fr; }
@@ -179,7 +161,7 @@
     </header>
 
     <div class="urgency-bar">
-        🔥 OFERTA DE LANÇAMENTO COM 50% DE DESCONTO TERMINA EM: 
+        🔥 OFERTA DE LANÇAMENTO COM 90% DE DESCONTO TERMINA EM: 
         <span id="timer" class="timer">02:59:59</span>
     </div>
 
@@ -189,7 +171,6 @@
             <div class="video-container animate-on-scroll">
                 <iframe src="https://www.youtube.com/embed/9kJNX3cwVnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <!-- LINK DE PAGAMENTO APLICADO AQUI -->
             <a href="https://pay.hotmart.com/N101561983W" class="cta-button animate-on-scroll">QUERO AUTOMATIZAR MINHA FARMÁCIA AGORA!</a>
             <p class="sub-cta animate-on-scroll">Compra segura | Acesso vitalício | Suporte incluso</p>
         </div>
@@ -272,26 +253,29 @@
                 <p>Receba o script completo e todos os arquivos para transformar sua farmácia em uma potência de vendas online.</p>
                 <h3>🎁 E AINDA LEVE 3 BÔNUS EXCLUSIVOS:</h3>
                 <ul class="bonus-list">
-                    <li><i class="fas fa-check-circle"></i> <strong>BÔNUS 1:</strong> Guia de Instalação Passo a Passo em Vídeo.</li>
-                    <li><i class="fas fa-check-circle"></i> <strong>BÔNUS 2:</strong> Suporte Premium de 30 dias para Personalização.</li>
-                    <li><i class="fas fa-check-circle"></i> <strong>BÔNUS 3:</strong> Arquivo `contexto.txt` Matador Pré-configurado para Farmácias.</li>
+                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 1:</strong> Guia de Instalação Passo a Passo em Vídeo</div></li>
+                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 2:</strong> Suporte Premium de 30 dias para Personalização</div></li>
+                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 3:</strong> Arquivo `contexto.txt` Matador Pré-configurado para Farmácias</div></li>
                 </ul>
                 <div class="price-box">
-                    <p class="old-price">De R$ 1.997,00</p>
-                    <p>Por apenas 12x de</p>
-                    <p class="new-price">R$ 99,50</p>
-                    <p><span>ou R$ 997,00 à vista</span></p>
+                    <p class="old-price">De R$ 790,00</p>
+                    <p>Por apenas 11x de</p>
+                    <p class="new-price">R$ 8,87</p>
+                    <p><span>ou R$ 79,90 à vista</span></p>
                 </div>
-                <!-- LINK DE PAGAMENTO APLICADO AQUI -->
                 <a href="https://pay.hotmart.com/N101561983W" class="cta-button">SIM, QUERO VENDER NO AUTOMÁTICO!</a>
                 <p class="sub-cta">ÚLTIMAS UNIDADES COM PREÇO DE LANÇAMENTO!</p>
             </div>
             <div class="guarantee animate-on-scroll">
-                <img src="OIP.jpeg" alt="Selo de Garantia de 7 Dias" loading="lazy">
+                <img src="OIP.jpg" alt="Selo de Garantia de 7 Dias" loading="lazy">
                 <div class="guarantee-text">
                     <h3>Sua Satisfação ou seu Dinheiro de Volta!</h3>
                     <p>Você tem 7 dias de garantia incondicional. Se por qualquer motivo você não ficar satisfeito com o PharmaBot, basta nos enviar um e-mail e devolveremos 100% do seu investimento. O risco é todo nosso!</p>
                 </div>
+            </div>
+            <div class="reclame-aqui-proof animate-on-scroll">
+                <img src="reclame-aqui.png" alt="Logo Reclame Aqui">
+                <p>Nossa maior garantia é a sua confiança. Estamos orgulhosos de manter um histórico impecável, com <span>zero reclamações</span> no Reclame Aqui.</p>
             </div>
         </div>
     </section>
@@ -333,7 +317,6 @@
         <div class="container">
             <h2 class="animate-on-scroll">Não espere seus concorrentes automatizarem antes de você!</h2>
             <p class="animate-on-scroll">Clique no botão abaixo e garanta sua vaga para transformar o atendimento da sua farmácia hoje mesmo.</p>
-            <!-- LINK DE PAGAMENTO APLICADO AQUI -->
             <a href="https://pay.hotmart.com/N101561983W" class="cta-button animate-on-scroll">QUERO MINHA FARMÁCIA VENDENDO 24H!</a>
             <p class="sub-cta animate-on-scroll">A oferta de lançamento está acabando...</p>
         </div>
