@@ -75,8 +75,22 @@
         .testimonial-author { font-weight: 700; }
         .testimonial-author span { display: block; font-weight: 400; font-size: 0.9rem; opacity: 0.8; }
         
-        .offer { background: var(--white-color); text-align: center; }
-        .offer-box { border: 3px dashed var(--secondary-color); border-radius: 15px; padding: 3rem; background: var(--light-color); }
+        /* ESTILOS DA OFERTA ATUALIZADOS */
+        .offer { background: var(--white-color); }
+        .offer-box { 
+            border: 3px dashed var(--secondary-color); 
+            border-radius: 15px; 
+            padding: 3rem; 
+            background: var(--light-color); 
+            text-align: center; /* Garante que tudo dentro fique centralizado */
+        }
+        .offer-mockup img {
+            width: 100%;
+            max-width: 400px; /* Ajuste o tamanho máximo conforme preferir */
+            display: block;
+            margin: 0 auto 2.5rem auto; /* Centraliza e adiciona espaço abaixo */
+            border-radius: 10px;
+        }
         .offer-box h2 { font-size: 2.2rem; font-weight: 700; color: var(--dark-color); }
         .offer-box h3 { font-size: 1.4rem; margin-top: 2rem; }
         .offer-box p { font-size: 1.1rem; margin-top: 1rem; }
@@ -103,15 +117,12 @@
         .faq { max-width: 800px; margin: auto; }
         .faq-item { background: var(--white-color); margin-bottom: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .faq-question { padding: 1rem 1.5rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        
-        /* CÓDIGO CORRIGIDO ABAIXO */
         .faq-answer { 
             padding: 0 1.5rem; 
             overflow: hidden; 
             max-height: 0; 
             transition: all 0.4s ease-out; 
         }
-
         .faq-item.active .faq-answer { max-height: 200px; padding: 1.5rem; }
         .faq-question::after { content: '+'; font-size: 1.5rem; color: var(--primary-color); transition: transform 0.3s ease; }
         .faq-item.active .faq-question::after { content: '-'; transform: rotate(180deg); }
@@ -254,15 +265,21 @@
         </div>
     </section>
 
+    <!-- ESTRUTURA DA OFERTA SIMPLIFICADA -->
     <section id="offer" class="offer section">
         <div class="container">
             <div class="offer-box animate-on-scroll">
+                
+                <div class="offer-mockup">
+                    <img src="mockup.jpg" alt="Mockup do PharmaBot em ação" loading="lazy">
+                </div>
+
                 <h2>Adquira AGORA seu Acesso Vitalício ao PharmaBot 24h</h2>
                 <p>Receba o script completo e todos os arquivos para transformar sua farmácia em uma potência de vendas online.</p>
                 <h3>🎁 E AINDA LEVE 3 BÔNUS EXCLUSIVOS:</h3>
                 <ul class="bonus-list">
-                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 1:</strong> Guia de Instalação Passo a Passo em Vídeo</div></li>
-                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 2:</strong> Suporte Premium de 30 dias para Personalização</div></li>
+                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 1:</strong> Guia de Instalação Passo a Passo</div></li>
+                    <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 2:</strong> Suporte Premium de 30 dias</div></li>
                     <li><i class="fas fa-check-circle"></i><div class="bonus-text"><strong>BÔNUS 3:</strong> Arquivo `contexto.txt` Matador Pré-configurado para Farmácias</div></li>
                 </ul>
                 <div class="price-box">
@@ -274,6 +291,7 @@
                 <a href="https://pay.hotmart.com/N101561983W" class="cta-button">SIM, QUERO VENDER NO AUTOMÁTICO!</a>
                 <p class="sub-cta">ÚLTIMAS UNIDADES COM PREÇO DE LANÇAMENTO!</p>
             </div>
+            
             <div class="guarantee animate-on-scroll">
                 <img src="OIP.jpg" alt="Selo de Garantia de 7 Dias" loading="lazy">
                 <div class="guarantee-text">
@@ -300,7 +318,7 @@
             <div class="faq-item">
                 <div class="faq-question">Quais são os custos para manter o bot funcionando?</div>
                 <div class="faq-answer">
-                    <p>Os custos são muito baixos. Você precisará de um servidor para hospedar o script (existem opções a partir de $5 dólares por mês) e uma chave da API da OpenAI, que tem um custo por uso, mas para o volume de uma farmácia, geralmente fica em poucos dólares por mês. É um investimento ínfimo perto do retorno em vendas e tempo economizado. Ou instalar em sua própria máquina sem custo algum.</p>
+                    <p>Os custos são muito baixos. Você precisará de um servidor para hospedar o script (existem opções a partir de $5 dólares por mês) e uma chave da API da OpenAI, que tem um custo por uso, mas para o volume de uma farmácia, geralmente fica em poucos dólares por mês. É um investimento ínfimo perto do retorno em vendas e tempo economizado.Ou instalar na sua máquina sem custo algum.</p>
                 </div>
             </div>
             <div class="faq-item">
